@@ -5,7 +5,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #CDCDCD;
-  background-color: #302723;
+  /*background-color: #302723;*/
 }
 
 img {
@@ -36,23 +36,68 @@ a {
   overflow: hidden;
 }
 
+.main-header {
+  min-width: 1200px;
+  background-color: #2B2221;
+  background-image: url("../img/banner-pet.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/*Центровщик*/
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.main-navigation {
+  /*outline: 1px solid yellow;*/
+  display: flex;
+  padding-top: 60px;
+}
+
+.logo-wrapper {
+  /*outline: 1px solid white;*/
+}
+
 .site-navigation {
+  /*outline: 1px solid orange;*/
+  display: flex;
+  align-items: center;
   font-size: 15px;
   line-height: 29px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-left: 492px;
 }
 
 .site-navigation li {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 36px;
+  padding-bottom: 10px;
 }
 
 .site-navigation a {
   color: #CDCDCD;
   text-decoration: none;
+  padding-bottom: 4px;
 }
 
+.site-navigation a:hover {
+  color: #FFFFFF;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.banner-info {
+  width: 450px;
+  padding-top: 205px;
+  padding-bottom: 270px;
+}
 
 .banner-info p:first-child {
   font-family: Georgia, "Times New Roman", serif;
@@ -67,9 +112,14 @@ a {
   line-height: 24px;
   font-weight: 400;
   color: #CDCDCD;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
 }
 
 .banner-button {
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 17px;
@@ -77,10 +127,30 @@ a {
   font-weight: 400;
   color: #292929;
   background-color: #F1CDB3;
+  padding: 16px 44px;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.banner-button:hover {
+  background-color: #FDDCC4;
 }
 
 .couzy-info {
   background-color: #FAFAFA;
+}
+
+.couzy-info .container {
+  background-image: url("../img/pets.jpg");
+  background-repeat: no-repeat;
+  background-position: top left 19%;
+  margin-top: 87px;
+  padding-bottom: 80px;
+}
+
+.info-wrapper {
+  width: 420px;
+  margin-left: 585px;
 }
 
 .couzy-info-heading {
@@ -89,6 +159,10 @@ a {
   line-height: 45px;
   font-weight: 400;
   color: #545454;
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 4px;
 }
 
 .couzy-info p {
@@ -96,6 +170,7 @@ a {
   line-height: 24px;
   font-weight: 400;
   color: #4C4C4C;
+  padding-top: 10px;
 }
 
 .pets {
@@ -103,56 +178,320 @@ a {
   background-color: #F6F6F6;
 }
 
+.forward {
+  position: relative;
+}
+
+.forward::before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  left: -40px;
+  width: 47px;
+  height: 47px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  background-image: url("../img/long-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% center;
+}
+
+.forward:hover::before {
+  background-color: #F1CDB3;
+}
+
 .pets h2 {
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
   color: #545454;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+
+.pets-list {
+  display: flex;
+}
+
+.pet {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+}
+
+.pet:nth-child(2) {
+  margin-left: 90px;
+}
+
+.pet:nth-child(3) {
+  margin-left: 50px;
+}
+
+.pet:nth-child(4) {
+  margin-left: 50px;
 }
 
 .pet-name {
+  padding-top: 15px;
+  padding-bottom: 5px;
   font-size: 20px;
   line-height: 45px;
   font-weight: 400;
   color: #545454;
   text-decoration: none;
+  text-align: center;
 }
 
 .pet-button {
+  padding: 12px 41px 14px 41px;
+  margin-left: 40px;
   font-size: 17px;
   line-height: 57px;
   font-weight: 400;
   color: #292929;
   text-decoration: none;
+  border: 2px solid #F1CDB3;
+  border-radius: 30px;
+}
+
+.pet-button:hover {
+  background-color: #F1CDB3;
+}
+
+.back {
+  position: relative;
+}
+
+.back::after {
+  content: "";
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 47px;
+  height: 47px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  background-image: url("../img/long-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% center;
+  transform: rotate(180deg);
+}
+
+.back:hover::after {
+  background-color: #F1CDB3;
+}
+
+.rest-button-wrapper {
+  margin-top: 95px;
+  padding-bottom: 50px;
 }
 
 .rest-pets-button {
+  padding: 15px 50px;
   font-size: 17px;
   line-height: 57px;
   font-weight: 400;
   color: #292929;
   background-color: #F1CDB3;
   text-decoration: none;
+  border-radius: 30px;
+  margin-left: 450px;
+}
+
+.rest-pets-button:hover {
+  background-color: #FDDCC4;
 }
 
 .help-to-pets {
   font-family: Georgia, "Times New Roman", serif;
   background-color: #FAFAFA;
+  /*outline: 1px solid green;*/
 }
 
 .help-to-pets h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 35px;
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
   color: #545454;
 }
 
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .help-list li {
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 65px;
   list-style: none;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
   color: #545454;
+  /*outline: 1px solid red;*/
+}
+
+.food {
+  margin-left: 45px;
+}
+
+.ambulance {
+  margin-left: 125px;
+}
+
+.toys {
+  margin-left: 149px;
+}
+
+.bowl {
+  margin-left: 140px;
+}
+
+.shampoo {
+  margin-left: 120px;
+}
+
+.vitamins {
+  margin-left: 145px;
+}
+
+.medcine {
+  margin-left: 130px;
+}
+
+.collar {
+  margin-left: 125px;
+}
+
+.house {
+  margin-left: 130px;
+}
+
+.help-list li::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+}
+
+.help-list li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 13px;
+  left: 17px;
+  background-image: url("../img/cat-food.png");
+  background-repeat: no-repeat;
+}
+
+
+.help-list li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 10px;
+  left: 40px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 10px;
+  left: -10px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/ball.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 13px;
+  left: 50px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/bowl.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 11px;
+  left: 35px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/shampoo.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 13px;
+  left: 15px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/pills.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(7)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 12px;
+  left: 20px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/syringe.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(8)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 13px;
+  left: 50px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/leash.png");
+  background-repeat: no-repeat;
+}
+
+.help-list li:nth-child(9)::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  top: 13px;
+  left: 38px;
+  background-image: url("../img/ambulance.png");
+  background-repeat: no-repeat;
+  background-image: url("../img/cat.png");
+  background-repeat: no-repeat;
 }
 
 .donation {
@@ -209,4 +548,22 @@ a {
 
 .main-footer li {
   list-style: none;
+}
+
+.pagination-list li {
+  list-style: none;
+}
+
+.pagination-list a {
+  text-decoration: none;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 20px;
+  line-height: 57px;
+  font-weight: 400;
+  color: #292929;
+  background-color: #F6F6F6;
+}
+
+.pagination-list .active {
+  background-color: #F1CDB3;
 }

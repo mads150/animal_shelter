@@ -10,98 +10,120 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="logo-wrapper">
-        <a class="main-header-logo" href="#">
-          <img src="img/couzy-logo.png" width="181" height="50" alt="Couzy house - shelter for pets in Boston">
-        </a>
+    <div class="container">
+      <nav class="main-navigation">
+        <div class="logo-wrapper">
+          <a class="main-header-logo" href="#">
+            <img src="img/couzy-logo.png" width="181" height="50" alt="Couzy house - shelter for pets in Boston">
+          </a>
+        </div>
+        <ul class="site-navigation">
+          <li><a href="#">About the shelter</a></li>
+          <li><a href="pets.html">Our pets</a></li>
+          <li><a href="#">To help the shelter</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <h2 class="visually-hidden">Banner</h2>
+      <div class="banner-info">
+        <p>Not only people<br> need a house</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
+        <a class="button banner-button" href="#">Make a friend</a>
       </div>
-      <ul class="site-navigation">
-        <li><a href="#">About the shelter</a></li>
-        <li><a href="pets.html">Our pets</a></li>
-        <li><a href="#">To help the shelter</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
+    </div>
   </header>
-  <section class="banner">
-    <h2 class="visually-hidden">Banner</h2>
-    <div class="banner-info">
-      <p>Not only people need a house</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-      <a class="button banner-button" href="#">Make a friend</a>
-    </div>
-  </section>
-  <section class="couzy-info">
-    <h2 class="couzy-info-heading">About the shelter “Cozy House”</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
-    <p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
-      ultrices pharetra. Morbi tempus at ante sit amet tristique.
-      Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
-      lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
-  </section>
-  <section class="pets">
-    <h2>Our friends who are looking for a house</h2>
-    <ul class="pets-list">
-      <li><a><span class="visually-hidden">Forward</span></a></li>
-      <li class="pet">
-        <img src="img/caterine.jpg" width="270" height="270" alt="cat Katrine">
-        <a class="pet-name" href="#">Katrine</a>
-        <a class="button pet-button" href="#">Learn More</a>
-      </li>
-      <li class="pet">
-        <img src="img/jennifer.jpg" width="270" height="270" alt="dog Jennifer">
-        <a class="pet-name" href="#">Jennifer</a>
-        <a class="button pet-button" href="#">Learn More</a>
-      </li>
-      <li class="pet">
-        <img src="img/woody.jpg" width="270" height="270" alt="dog Woody">
-        <a class="pet-name" href="#">Woody</a>
-        <a class="button pet-button" href="#">Learn More</a>
-      </li>
-      <li><a><span class="visually-hidden">Back</span></a></li>
-    </ul>
-    <a class="button rest-pets-button" href="#">Get to know the rest</a>
-  </section>
-  <section class="help-to-pets">
-    <h2>Than you can help our shelter</h2>
-    <ul class="help-list">
-      <li class="help-item">Pet food</li>
-      <li class="help-item">Transportation</li>
-      <li class="help-item">Toys</li>
-      <li class="help-item">Bowls and cups</li>
-      <li class="help-item">Shampoos</li>
-      <li class="help-item">Vitamins</li>
-      <li class="help-item">Medicines</li>
-      <li class="help-item">Collars / leashes</li>
-      <li class="help-item">Sleeping area</li>
-    </ul>
-  </section>
-  <section class="donation">
-    <h2 class="visually-hidden">Donation information</h2>
-    <p><span>In addition, you can make a donation</span></p>
-    <p class="bank-account">
-      Name of the bank / Type of bank account<br><span>8380 2880 8028 8791 7435</span>
-    </p>
-    <p class="additional-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
-et malesuada fames ac ante ipsum primis in faucibus. </p>
-  </section>
+  <main>
+    <section class="couzy-info">
+      <div class="container">
+        <div class="info-wrapper">
+          <h2 class="couzy-info-heading">About the shelter<br> “Cozy House”</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+          <p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
+            ultrices pharetra. Morbi tempus at ante sit amet tristique.
+            Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
+            lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+        </div>
+      </div>
+    </section>
+    <section class="pets">
+      <div class="container">
+        <h2>Our friends who<br> are looking for a house</h2>
+        <ul class="pets-list">
+          <li><a class="forward" href="#"><span class="visually-hidden">Forward</span></a></li>
+          <li class="pet">
+            <img src="img/caterine.jpg" width="270" height="270" alt="cat Katrine">
+            <a class="pet-name" href="#">Katrine</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li class="pet">
+            <img src="img/jennifer.jpg" width="270" height="270" alt="dog Jennifer">
+            <a class="pet-name" href="#">Jennifer</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li class="pet">
+            <img src="img/woody.jpg" width="270" height="270" alt="dog Woody">
+            <a class="pet-name" href="#">Woody</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a class="back" href="#"><span class="visually-hidden">Back</span></a></li>
+        </ul>
+        <div class="rest-button-wrapper">
+          <a class="button rest-pets-button" href="#">Get to know the rest</a>
+        </div>
+      </div>
+    </section>
+    <section class="help-to-pets">
+      <div class="container">
+        <h2>Than you can help<br> our shelter</h2>
+        <ul class="help-list">
+          <li class="help-item food">Pet food</li>
+          <li class="help-item ambulance">Transportation</li>
+          <li class="help-item toys">Toys</li>
+          <li class="help-item bowl">Bowls and cups</li>
+          <li class="help-item shampoo">Shampoos</li>
+          <li class="help-item vitamins">Vitamins</li>
+          <li class="help-item medcine">Medicines</li>
+          <li class="help-item collar">Collars / leashes</li>
+          <li class="help-item house">Sleeping area</li>
+        </ul>
+      </div>
+    </section>
+    <section class="donation">
+      <div class="container">
+        <h2 class="visually-hidden">Donation information</h2>
+        <p><span>In addition, you can make a donation</span></p>
+        <p class="bank-account">
+          Name of the bank / Type of bank account<br><span>8380 2880 8028 8791 7435</span>
+        </p>
+        <p class="additional-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+          ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+          et malesuada fames ac ante ipsum primis in faucibus. </p>
+      </div>
+    </section>
+  </main>
   <footer class="main-footer">
-    <div>
-      <h2>For questions and suggestions</h2>
-      <ul class="guestions-and-suggestions">
-        <li>email@shelter.com</li>
-        <li>+13 674 567 75 54</li>
-      </ul>
-    </div>
-    <div>
-      <h2>We are waiting for your visit</h2>
-      <ul class="shelter-adresses">
-        <li>Boston, Central Street, 1st
-(Entrance from the store)</li>
-        <li>London, South Park, 18st</li>
-      </ul>
+    <div class="container">
+      <div>
+        <h2>For questions and suggestions</h2>
+        <ul class="guestions-and-suggestions">
+          <li>email@shelter.com</li>
+          <li>+13 674 567 75 54</li>
+        </ul>
+      </div>
+      <div>
+        <h2>We are waiting for your visit</h2>
+        <ul class="shelter-adresses">
+          <li>Boston, Central Street, 1st
+            (Entrance from the store)</li>
+          <li>London, South Park, 18st</li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
