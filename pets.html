@@ -3,109 +3,127 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Animal shelter</title>
+  <title>Cozy Animal shelter</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <header class="main-header">
+  <header class="inner-header">
+    <div class="container">
       <nav class="main-navigation">
         <div class="logo-wrapper">
           <a class="main-header-logo" href="index.html">
-            <img src="img/couzy-logo.png" width="181" height="50" alt="Couzy house - shelter for pets in Boston">
+            <img src="img/inner-logo.png" width="181" height="50" alt="Couzy house - shelter for pets in Boston">
           </a>
         </div>
-        <ul class="site-navigation">
+        <ul class="site-navigation inner-navigation">
           <li><a href="#">About the shelter</a></li>
-          <li><a href="#">Our pets</a></li>
+          <li><a class="active">Our pets</a></li>
           <li><a href="#">To help the shelter</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
       </nav>
-    </header>
-
-    <section class="pets">
-      <h2>Our friends who are looking for a house</h2>
-      <ul class="pets-list">
-        <li><a><span class="visually-hidden">Forward</span></a></li>
-        <li class="pet">
-          <img src="img/caterine.jpg" width="270" height="270" alt="cat Katrine">
-          <a class="pet-name" href="#">Katrine</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li class="pet">
-          <img src="img/jennifer.jpg" width="270" height="270" alt="dog Jennifer">
-          <a class="pet-name" href="#">Jennifer</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li class="pet">
-          <img src="img/woody.jpg" width="270" height="270" alt="dog Woody">
-          <a class="pet-name" href="#">Woody</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-        <li class="pet">
-          <img src="img/sophia.jpg" width="270" height="270" alt="dog Sophia">
-          <a class="pet-name" href="#">Sophia</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-        <li class="pet">
-          <img src="img/timmy.jpg" width="270" height="270" alt="cat Timmy">
-          <a class="pet-name" href="#">Timmy</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-        <li class="pet">
-          <img src="img/charly.jpg" width="270" height="270" alt="dog Charly">
-          <a class="pet-name" href="#">Charly</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-        <li class="pet">
-          <img src="img/scarlette.jpg" width="270" height="270" alt="dog Scarlett">
-          <a class="pet-name" href="#">Scarlett</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-        <li class="pet">
-          <img src="img/freddie.jpg" width="270" height="270" alt="cat Freddie">
-          <a class="pet-name" href="#">Freddie</a>
-          <a class="button pet-button" href="#">Learn More</a>
-        </li>
-        <li><a><span class="visually-hidden">Back</span></a></li>
-      </ul>
-      <a class="button rest-pets-button" href="#">Get to know the rest</a>
-    </section>
-    <div class="paginator">
-      <ul class="pagination-list">
-        <li><a class="active" href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">...</a></li>
-        <li><a href="#">10</a></li>
-      </ul>
     </div>
-    <footer class="main-footer">
-      <div>
+  </header>
+  <main class="inner-page">
+    <section class="pets">
+      <div class="container">
+        <h2>Our friends who<br> are looking for a house</h2>
+        <ul class="pets-list">
+          <li class="pet">
+            <img src="img/caterine.jpg" width="270" height="270" alt="cat Katrine">
+            <a class="pet-name" href="#">Katrine</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li class="pet">
+            <img src="img/jennifer.jpg" width="270" height="270" alt="dog Jennifer">
+            <a class="pet-name" href="#">Jennifer</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li class="pet">
+            <img src="img/woody.jpg" width="270" height="270" alt="dog Woody">
+            <a class="pet-name" href="#">Woody</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a><span class="visually-hidden">Back</span></a></li>
+          <li class="pet sophia">
+            <img src="img/sophia.jpg" width="270" height="270" alt="dog Sophia">
+            <a class="pet-name" href="#">Sophia</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a><span class="visually-hidden">Back</span></a></li>
+          <li class="pet">
+            <img src="img/timmy.jpg" width="270" height="270" alt="cat Timmy">
+            <a class="pet-name" href="#">Timmy</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a><span class="visually-hidden">Back</span></a></li>
+          <li class="pet">
+            <img src="img/charly.jpg" width="270" height="270" alt="dog Charly">
+            <a class="pet-name" href="#">Charly</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a><span class="visually-hidden">Back</span></a></li>
+          <li class="pet">
+            <img src="img/scarlette.jpg" width="270" height="270" alt="dog Scarlett">
+            <a class="pet-name" href="#">Scarlett</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+          <li><a><span class="visually-hidden">Back</span></a></li>
+          <li class="pet freddie">
+            <img src="img/freddie.jpg" width="270" height="270" alt="cat Freddie">
+            <a class="pet-name" href="#">Freddie</a>
+            <div class="pet-button-wrapper">
+              <a class="button pet-button" href="#">Learn More</a>
+            </div>
+          </li>
+        </ul>
+        <div class="paginator">
+            <ul class="pagination-list">
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">10</a></li>
+            </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="first-column">
         <h2>For questions and suggestions</h2>
         <ul class="guestions-and-suggestions">
-          <li>email@shelter.com</li>
-          <li>+13 674 567 75 54</li>
+          <li class="shelter-email">email@shelter.com</li>
+          <li class="shelter-number">+13 674 567 75 54</li>
         </ul>
       </div>
-      <div>
+      <div class="second-column">
         <h2>We are waiting for your visit</h2>
         <ul class="shelter-adresses">
-          <li>Boston, Central Street, 1st
-            (Entrance from the store)</li>
-          <li>London, South Park, 18st</li>
+          <li class="boston">Boston, Central Street, 1st
+            <p>(Entrance from the store)</p>
+          </li>
+          <li class="london">London, South Park, 18st</li>
         </ul>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>

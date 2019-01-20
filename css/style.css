@@ -37,7 +37,7 @@ a {
 }
 
 .main-header {
-  min-width: 1200px;
+  /*min-width: 1200px;*/
   background-color: #2B2221;
   background-image: url("../img/banner-pet.jpg");
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ a {
   width: 1170px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .main-navigation {
@@ -97,6 +97,7 @@ a {
   width: 450px;
   padding-top: 205px;
   padding-bottom: 270px;
+  /*margin-bottom: -85px;*/
 }
 
 .banner-info p:first-child {
@@ -143,9 +144,9 @@ a {
 .couzy-info .container {
   background-image: url("../img/pets.jpg");
   background-repeat: no-repeat;
-  background-position: top left 19%;
-  margin-top: 87px;
-  padding-bottom: 80px;
+  background-position: top 51% left 19.1%;
+  padding-top: 87px;
+  padding-bottom: 100px;
 }
 
 .info-wrapper {
@@ -206,18 +207,22 @@ a {
   font-weight: 400;
   color: #545454;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 35px;
+  padding-top: 70px;
+  padding-bottom: 47px;
+  margin: 0;
+  padding-right: 30px;
 }
 
 .pets-list {
   display: flex;
+  list-style: none;
 }
 
 .pet {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
+  padding-bottom: 30px;
 }
 
 .pet:nth-child(2) {
@@ -283,8 +288,8 @@ a {
 }
 
 .rest-button-wrapper {
-  margin-top: 95px;
-  padding-bottom: 50px;
+  margin-top: 65px;
+  padding-bottom: 65px;
 }
 
 .rest-pets-button {
@@ -306,13 +311,13 @@ a {
 .help-to-pets {
   font-family: Georgia, "Times New Roman", serif;
   background-color: #FAFAFA;
-  /*outline: 1px solid green;*/
 }
 
 .help-to-pets h2 {
+  margin: 0;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 65px;
+  padding-bottom: 60px;
   padding-right: 35px;
   font-size: 35px;
   line-height: 45px;
@@ -320,9 +325,14 @@ a {
   color: #545454;
 }
 
+.help-to-pets ul {
+  margin: 0;
+}
+
 .help-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 13px;
 }
 
 .help-list li {
@@ -334,7 +344,6 @@ a {
   line-height: 24px;
   font-weight: 400;
   color: #545454;
-  /*outline: 1px solid red;*/
 }
 
 .food {
@@ -499,7 +508,21 @@ a {
   font-family: Georgia, "Times New Roman", serif;
 }
 
-.donation span {
+.donation .container {
+  background-image: url("../img/donation-dog.png");
+  background-repeat: no-repeat;
+  background-position: left 2.5% top 50%;
+}
+
+.donation-wrapper {
+  margin-left: 583px;
+  margin-right: 200px;
+}
+
+.donation h2 {
+  padding: 0;
+  margin: 0;
+  padding-top: 64px;
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
@@ -507,21 +530,46 @@ a {
 }
 
 .bank-account {
+  padding: 0;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 13px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
   color: #545454;
 }
 
-.bank-account span {
+.bank-numbers {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 235px;
+  padding-left: 60px;
   font-family: "Times New Roman", Georgia, serif;
   font-size: 20px;
   line-height: 45px;
   font-weight: 400;
   color: #292929;
+  background-color: #F1CDB3;
+  border-radius: 10px;
+}
+
+.bank-numbers::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  top: 10px;
+  left: 15px;
+  background-image: url("../img/credit-card (1).png");
+  background-repeat: no-repeat;
 }
 
 .additional-info {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 80px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 18px;
@@ -536,6 +584,26 @@ a {
   line-height: 45px;
   font-weight: 400;
   color: #F1CDB3;
+  background-color: #4F4139;
+  background-image: url("../img/footer-dog.jpg");
+  background-position: right bottom;
+}
+
+.main-footer .container {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.first-column {
+  width: 270px;
+  margin-right: 180px;
+  /*outline: 1px solid white;*/
+}
+
+.second-column {
+  width: 265px;
+  /*outline: 1px solid yellow;*/
 }
 
 .main-footer h2 {
@@ -550,11 +618,129 @@ a {
   list-style: none;
 }
 
+.shelter-email {
+  position: relative;
+  padding-left: 20px;
+}
+
+.shelter-email::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  top: 10px;
+  left: -40px;
+  background-image: url("../img/envelope.png");
+  background-repeat: no-repeat;
+}
+
+.shelter-number {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.shelter-number::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 31px;
+  top: 23px;
+  left: -40px;
+  background-image: url("../img/telephone.png");
+  background-repeat: no-repeat;
+}
+
+.boston {
+  position: relative;
+  margin-top: -13px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: 8px;
+}
+
+.boston p {
+  padding: 0;
+  margin: 0;
+  margin-top: -20px;
+}
+
+.boston::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 38px;
+  top: 15px;
+  left: -47px;
+  background-image: url("../img/pin.png");
+  background-repeat: no-repeat;
+}
+
+.london {
+  position: relative;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.london::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 38px;
+  top: 5px;
+  left: -47px;
+  background-image: url("../img/pin.png");
+  background-repeat: no-repeat;
+}
+
+.inner-navigation a {
+  color: #545454;
+}
+
+.inner-navigation .active {
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.inner-navigation a:hover {
+  color: #292929;
+}
+
+.inner-page .container {
+  /*outline: 1px solid red;*/
+  padding-bottom: 60px;
+}
+
+.inner-page .pets-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-page .pet {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.inner-page .pet:not(.sophia):not(.freddie) {
+  margin-right: 30px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  margin-left: 405px;
+  margin-top: 30px;
+}
+
 .pagination-list li {
   list-style: none;
+  margin-right: 18px;
 }
 
 .pagination-list a {
+  padding: 13px 18px;
+  border: 2px solid #F1CDB3;
   text-decoration: none;
   font-family: "Times New Roman", Georgia, serif;
   font-size: 20px;
@@ -562,6 +748,7 @@ a {
   font-weight: 400;
   color: #292929;
   background-color: #F6F6F6;
+  border-radius: 50%;
 }
 
 .pagination-list .active {
