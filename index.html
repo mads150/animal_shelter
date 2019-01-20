@@ -61,7 +61,7 @@
             <img src="img/jennifer.jpg" width="270" height="270" alt="dog Jennifer">
             <a class="pet-name" href="#">Jennifer</a>
             <div class="pet-button-wrapper">
-              <a class="button pet-button" href="#">Learn More</a>
+              <a class="button pet-button jennifer-button" href="#">Learn More</a>
             </div>
           </li>
           <li class="pet">
@@ -128,6 +128,60 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-jennifer">
+    <div class="jennifer-wrapper">
+      <img src="img/jenn.jpg" width="470" height="470" alt="dog Jennifer">
+      <div class="pet-description">
+        <h2>Jennifer</h2>
+        <h3>Pooch + Labrador</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula
+          ves
+          tibulum nibh.</p>
+        <ul class="pet-characteristics">
+          <li><span>Age:</span> 2 months</li>
+          <li><span>Inoculations:</span> none</li>
+          <li><span>Diseases:</span> none</li>
+          <li><span>Parasites:</span> none</li>
+        </ul>
+      </div>
+    </div>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <section class="modal modal-charly">
+    <div class="charly-wrapper">
+      <img src="img/charles.jpg" width="470" height="470" alt="dog Charly">
+      <div class="pet-description">
+        <h2>Charly</h2>
+        <h3>Pooch</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula
+          ves
+          tibulum nibh.</p>
+        <ul class="pet-characteristics">
+          <li><span>Age:</span> 4 months</li>
+          <li><span>Inoculations:</span> none</li>
+          <li><span>Diseases:</span> none</li>
+          <li><span>Parasites:</span> none</li>
+        </ul>
+      </div>
+    </div>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <script>
+    var button = document.querySelector(".jennifer-button");
+
+    var popup = document.querySelector(".modal-jennifer");
+    var close = popup.querySelector(".modal-close");
+
+    button.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+  </script>
 </body>
 
 </html>
