@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Cozy Animal shelter</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize-mini.css">
+  <link rel="stylesheet" href="css/minifier.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     </div>
   </header>
   <main class="inner-page">
-    <section class="pets">
+    <section class="pets inner-pets">
       <div class="container">
         <h2>Our friends who<br> are looking for a house</h2>
         <ul class="pets-list">
@@ -98,13 +98,14 @@
             <li><a class="active" href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-            <li><a href="#">10</a></li>
+            <li class="more-pages"><a class="ellipsoids" href="#">4</a></li>
+            <li class="last-page"><a class="last-link" href="#">10</a></li>
           </ul>
         </div>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer inner-footer">
     <div class="container">
       <div class="first-column">
         <h2>For questions and suggestions</h2>
@@ -162,36 +163,7 @@
     </div>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script>
-    var button = document.querySelector(".jennifer-button");
-
-    var charlyButton = document.querySelector(".charly-button");
-
-    var popup = document.querySelector(".modal-jennifer");
-    var charlyPopup = document.querySelector(".modal-charly");
-    var close = popup.querySelector(".modal-close");
-    var charlyClose = charlyPopup.querySelector(".modal-close");
-
-    button.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-
-    charlyButton.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      charlyPopup.classList.add("modal-show");
-    });
-
-    charlyClose.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      charlyPopup.classList.remove("modal-show");
-    });
-  </script>
+  <script src="js/mini-pet-card.js"></script>
 </body>
 
 </html>

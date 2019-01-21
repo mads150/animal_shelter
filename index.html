@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Cozy Animal shelter</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize-mini.css">
+  <link rel="stylesheet" href="css/minifier.css">
 </head>
 
 <body>
@@ -166,22 +166,7 @@
     </div>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script>
-    var button = document.querySelector(".jennifer-button");
-
-    var popup = document.querySelector(".modal-jennifer");
-    var close = popup.querySelector(".modal-close");
-
-    button.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-  </script>
+  <script src="js/mini-jennifer-card.js"></script>
 </body>
 
 </html>
